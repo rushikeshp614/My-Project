@@ -57,8 +57,6 @@ app.post("/compile", (req, res) => {
 	let language = req.body.language;
 	let input = req.body.input;
 
-  // code = code.replace(/input\(\)/g, 'input("' + input + '")');
-
   if (language==="python"){
     language="python3"
   }
@@ -90,44 +88,8 @@ app.post("/compile", (req, res) => {
   
 })
 
-// app.get("/api/questions-and-variables/:exerciseType", async (req, res) => {
-  
-//   try {
-//     const exerciseType = req.params.exerciseType;
-//     const questions = await Question.find({ exerciseType });
-//     const variables = await Variable.find({ exerciseType });
-//     res.json({ questions, variables });
-//   } catch (error) {
-//     res.status(500).json({ error: "Failed to fetch questions and variables" });
-//   }
-// });
 
-// app.get("/api/:exerciseType/solutions", async (req, res) => {
-//   const { exerciseType } = req.params;
-//   try {
-//     const solutions = await Solution.find({ type: exerciseType });
-//     res.json(solutions);
-//   } catch (error) {
-//     res.status(500).json({ error: "Failed to fetch solutions" });
-//   }
-// });
 
-// Backend - Handling the request to fetch exercise data for a specific exerciseType
-// app.get("/api/exerciseTemplate", async (req, res) => {
-//   try {
-//     const exerciseType = req.query.exerciseType; // Get the exerciseType from the query parameters
-//     console.log("Received exerciseType:", exerciseType);
-//     const exerciseTemplate = await LoopExerciseTemplate.findOne({ exerciseType });
-
-//     if (!exerciseTemplate) {
-//       return res.status(404).json({ error: "Exercise template not found" });
-//     }
-
-//     return res.json(exerciseTemplate);
-//   } catch (error) {
-//     return res.status(500).json({ error: "Failed to fetch exercise template" });
-//   }
-// });
 app.get("/api/exerciseTemplate", async (req, res) => {
   try {
     const exerciseType = req.query.exerciseType; // Get the exerciseType from the query parameters
