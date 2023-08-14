@@ -1,0 +1,742 @@
+/* //Signup and Login Form// */
+.app-container {
+  background-color: #f0f0f0;
+}
+
+.SignUpBody {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "lato", sans-serif;
+}
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Set the background color same as jumbotron */
+}
+
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1.5px solid black; /* Set the border color to black */
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+  color: black; /* Set the text color to black */
+}
+
+::placeholder {
+  color: transparent; /* Set the placeholder text color to black */
+}
+
+.label {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #DADCE0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.forgotPassword {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: #333; /* Set the button background color to dark */
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  
+}
+
+.submitBtn:hover {
+  background-color: #222; /* Set the button hover background color to darker shade */
+  transform: translateY(-2px);
+}
+
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.input:focus {
+  border: 2px solid black;
+}
+
+.input:not(:placeholder-shown) + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* StartingPage */
+.jumbotron {
+ 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.centered-buttons {
+  margin-top: 20px;
+}
+
+/* HomePage */
+.HomePageBody {
+  font-family: Arial, sans-serif;
+  
+}
+
+.homeContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.question {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 1500px;
+  height: auto;
+}
+.question .exerBtn {
+  position: absolute;
+  right: 50px;
+  bottom:35px
+  /* Other styles... */
+}
+
+.HomePageBody h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.HomePageBody p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.exerBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #222;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+.exerBtn:hover {
+  background-color: #222;
+  color:white;
+  box-shadow: 0 12px 16px 0 rgba(15, 15, 15, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Successful-Signup-popup */
+
+.PopUpBody{
+  background-color: #f0f0f0;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup-content img {
+  max-width: 100%;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+/* landing-page */
+
+.landingPageBody {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.landingPageBody h1 {
+  font-family: "Montserrat-Bold";
+}
+.landingPageBody h2{
+  font-family: "Montserrat-Bold";
+}
+
+.landingPageBody p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+/* Sections */
+
+.colored-section {
+  
+  color: #fff;
+}
+
+.white-section {
+  background-color: #f0f0f0;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Title Section */
+
+#title {
+  background-color: rgb(41, 38, 38);
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 60%;
+  position: absolute;
+  right: 15%;
+  top:auto;
+}
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color:  rgb(59, 57, 57);
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: black;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: rgb(80, 77, 77);
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.python-img{
+  height: 200px;
+  width: 200px;
+}
+
+#cta{
+  background-color: white;
+  position: relative;
+}
+
+
+/* Arrow */
+
+/* Arrow Styles */
+div.arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  cursor: pointer;
+}
+
+div.arrow {
+  width: 4vmin;
+  height: 4vmin;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+div.arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 0.4vmin 0.4vmin 0 0;
+  border-style: solid;
+  border-color: black;
+  transition: 0.2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+div.arrow:after {
+  content: "";
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 0.4vmin 0 0;
+  border-style: solid;
+  border-color: black;
+  transform-origin: 100% 0;
+  transition: 0.2s ease;
+}
+div.arrow:hover::after {
+  transform: rotate(45deg);
+  border-color: orange;
+  height: 160%;
+}
+div.arrow:hover::before {
+  border-color: orange;
+  transform: scale(0.8) translateY(-10%);
+}
+
+/* CodingArea */
+
+
+
+/* codingScreen.css */
+
+.codingScreenBody > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  max-width: 98%;
+  padding-top: 40px;
+}
+
+.codingScreenBody > .header {
+  
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.codingScreenBody > .container > .question {
+  flex: 1;
+  width: 100%;
+  min-height: 150px;
+  /* text-align: center; */
+}
+
+.codingScreenBody > .container > .question > pre {
+  text-align: center;
+  margin-bottom: 0;
+  min-height: 150px;
+  font-style: Arial;
+  font-size: 20px;
+
+}
+
+.editor-output-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.codingScreenBody > .container > .editor-output-container > .code-editor {
+  flex: 0 0 57%;
+  position: relative; /* Add position relative to code editor */
+}
+
+.codingScreenBody > .container > .editor-output-container > .code-editor .solution-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.codingScreenBody > .container > .editor-output-container > .input-output-area {
+  flex: 0 0 43%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  max-height: 800px;
+  max-width: 617px;
+}
+
+.input-box,
+.output-box,
+.spinner-box {
+  flex: 1;
+  /* overflow-y: auto; */
+ 
+  
+}
+
+.input-box textarea {
+  font-size: 16px;
+}
+
+.output-box {
+  background-color: black;
+  overflow-y: auto;
+  overflow-x: auto;
+  color: white;
+  position: relative;
+  
+}
+
+.output-box pre{
+  box-sizing: border-box;
+ 
+  height: 100%;  
+  padding: 5px;
+  
+}
+#code-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: #242424;
+  color: whitesmoke;
+  padding: 5px;
+}
+#code-input:focus {
+  outline: none;
+}
+
+.ace_print-margin {
+  display: none;
+}
+
+.wp-block-genesis-blocks-gb-accordion {
+  border: none;
+  background: none;
+  text-align: right;
+}
+
+.wp-block-genesis-blocks-gb-accordion summary {
+  cursor: pointer;
+}
+
+.wp-block-genesis-blocks-gb-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+} */
+
+.spinner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.spinner-box img {
+  width: 200px;
+}
+
+.codeButton,
+.clearButton,
+.nextButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #222;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+.codeButton:hover {
+  background-color: green;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(15, 15, 15, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clearButton:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(15, 15, 15, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nextButton:hover {
+  background-color: #222;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(15, 15, 15, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* codingScreen.css */
+
+/* ... (previous CSS rules) ... */
+
+/* Additional styles for the layout */
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion {
+  width: 57%; /* Width for Show Solution box */
+  
+  /* height: 100%; */
+  display: flex;
+  
+  
+}
+
+
+.buttons .wp-block-genesis-blocks-gb-accordion details{
+  width: 100%;
+}
+.buttons .wp-block-genesis-blocks-gb-accordion summary {
+  display: flex;
+  justify-content: flex-start; /* Align summary to the left */
+  align-items: center; /* Center items vertically */
+  margin: 0 auto; /* Center summary horizontally */
+  list-style: none; /* Remove default list style */
+  cursor: pointer;
+  position: relative; /* Set position relative to the summary element */
+  padding: 10px 20px;
+  background-color: white;
+  color: #222;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+  border-style: solid;
+  border-color: #333;
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion summary:hover {
+  background-color: #222;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(15, 15, 15, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion summary::before,
+.buttons .wp-block-genesis-blocks-gb-accordion summary::after {
+  content: ""; /* Empty content for pseudo-elements */
+  position: absolute;
+  top: 50%; /* Position at the vertical center */
+  transform: translateY(-50%); /* Center vertically */
+  width: 0.6em; /* Width of the arrow */
+  height: 0.6em; /* Height of the arrow */
+  background-color: transparent; /* Color of the arrow */
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion summary::before {
+  left: 0; /* Position the first pseudo-element on the left */
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion summary::after {
+  right: 0; /* Position the second pseudo-element on the right */
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion summary::before {
+  content: "+"; /* Add the plus sign (+) to the summary element */
+  font-weight: bold; /* Make the plus sign bold */
+  margin-right: 0.35em; /* Add spacing between the plus sign and text */
+  position: relative; /* Set position relative for further adjustment */
+  top: -3.5px; /* Adjust the vertical position to align with the text */
+  
+}
+
+.buttons .wp-block-genesis-blocks-gb-accordion details {
+  text-align: left; /* Align the details to the left */
+}
+
+.navbarCoding {
+  width: 57%; /* Width for the button container */
+  display: flex;
+  justify-content: space-between; /* Align buttons horizontally with equal distance */
+  align-items: center; /* Center items horizontally */
+}
+
+.buttons .button-container {
+  width: 43%; /* Width for the button container */
+  display: flex;
+  justify-content: space-between; /* Align buttons horizontally with equal distance */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Media query to reset flex-wrap when the screen size is smaller */
+@media (max-width: 768px) {
+  .buttons {
+    flex-wrap: nowrap;
+  }
+
+  .buttons .wp-block-genesis-blocks-gb-accordion,
+  .buttons .button-container {
+    width: 100%; /* Reset width for smaller screens */
+  }
+
+  .buttons .button-container {
+    flex-direction: row; /* Reset to horizontal layout for smaller screens */
+    justify-content: space-between; /* Align buttons horizontally with equal distance */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+
+
+
